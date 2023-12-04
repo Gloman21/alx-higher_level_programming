@@ -23,7 +23,7 @@ if __name__ == "__main__":
         if b == 0:
             print("Error: Division by zero")
             sys.exit(1)
-         print ("{} {} {} = {}".format(a, operator, b, div(a, b)))
+        print ("{} {} {} = {}".format(a, operator, b, div(a, b)))
     else:
         print("Unkown operator. Available operators: +, -, * and /")
         sys.exit(1)
