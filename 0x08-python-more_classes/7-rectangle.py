@@ -50,14 +50,13 @@ class Rectangle:
         return (2 * (self.__width + self.__height))
 
     def __str__(self):
-        if self.__width == 0 or self.__height == 0:
-            return ("")
-
         rect = []
+        if self.__width == 0 or self.__height == 0:
+            return ""
+
         for i in range(self.__height):
             for j in range(self.__width):
                 rect.append(str(self.print_symbol))
-            [rect.append('#') for j in range(self.__width)]
             if i != self.__height - 1:
                 rect.append("\n")
         return ("".join(rect))
