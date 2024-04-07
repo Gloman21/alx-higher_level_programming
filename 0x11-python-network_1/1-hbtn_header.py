@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-""" Script that takes URL, sends requests and displas value of X-Request-Id"""
+""" Script that takes URL, sends requests and displays value of X-Request-Id"""
 
-    if __name__ == "__main__"
-        import sys
-        import urllib.request
+    import sys
+    import urllib.request
+
+    if __name__ == "__main__":
 
     with urllib.request.urlopen(sys.argv[1]) as response:
-        print(response.headers["X-Request-Id"])
+        print(response.getheader["X-Request-Id"])
